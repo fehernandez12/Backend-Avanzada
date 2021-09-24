@@ -2,7 +2,7 @@ package estudianteService;
 
 import java.util.List;
 
-import Backend.Spring.modelEntity.Estudiante;
+import modelEntity.Estudiante;
 
 public interface IEstudianteService {
 

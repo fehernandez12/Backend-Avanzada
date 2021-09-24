@@ -2,7 +2,7 @@ package personaService;
 
 import java.util.List;
 
-import Backend.Spring.modelEntity.Persona;
+import modelEntity.Persona;
 
 public interface IPersonaService {
 	public List<Persona> findAll();

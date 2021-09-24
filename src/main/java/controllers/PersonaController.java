@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import Backend.Spring.modelEntity.Persona;
+import modelEntity.Persona;
 import personaService.IPersonaService;
 
 

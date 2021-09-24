@@ -1,4 +1,4 @@
-package Backend.Spring.modelEntity;
+package modelEntity;
 
 import java.io.Serializable;
 
@@ -10,14 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="personas")
-public class Persona implements Serializable {
+@Table(name="estudiantes")
+public class Estudiante implements Serializable {
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
@@ -27,12 +24,13 @@ public class Persona implements Serializable {
 	
 	@Column
 	private String apellido;
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
+	
+	@Column
+	private float nota;
+	
+	@Column
+	private String carrera;
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -45,10 +43,20 @@ public class Persona implements Serializable {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	public Persona orElse(Object object) {
+	public float getNota() {
+		return nota;
+	}
+	public void setNota(float nota) {
+		this.nota = nota;
+	}
+	public String getCarrera() {
+		return carrera;
+	}
+	public void setCarrera(String carrera) {
+		this.carrera = carrera;
+	}
+	public Estudiante orElse(Object object) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
 }

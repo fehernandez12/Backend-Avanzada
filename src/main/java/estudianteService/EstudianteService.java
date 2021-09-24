@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import Backend.Spring.modelEntity.Estudiante;
+import modelEntity.Estudiante;
 import modelsDAO.IEstudianteDAO;
 
 public class EstudianteService implements IEstudianteService {

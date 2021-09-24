@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Backend.Spring.modelEntity.Persona;
+import modelEntity.Persona;
 import modelsDAO.IPersonaDAO;
 
 @Service
