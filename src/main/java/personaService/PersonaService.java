@@ -31,5 +31,13 @@ public class PersonaService implements IPersonaService {
 		// TODO Auto-generated method stub
 		personaDao.deleteById(id);
 	}
+
+	@Override
+	public Persona findById(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 	
 }

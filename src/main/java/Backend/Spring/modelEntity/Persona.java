@@ -40,6 +40,10 @@ public class Persona implements Serializable {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+	public Persona orElse(Object object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }
