@@ -1,8 +1,8 @@
-package personaService;
+package Backend.Spring.personaService;
 
 import java.util.List;
 
-import modelEntity.Persona;
+import Backend.Spring.modelEntity.Persona;
 
 public interface IPersonaService {
 	public List<Persona> findAll();

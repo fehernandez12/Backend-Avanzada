@@ -1,12 +1,12 @@
-package personaService;
+package Backend.Spring.personaService;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import modelEntity.Persona;
-import modelsDAO.IPersonaDAO;
+import Backend.Spring.modelEntity.Persona;
+import Backend.Spring.modelsDAO.IPersonaDAO;
 
 @Service
 public class PersonaService implements IPersonaService {

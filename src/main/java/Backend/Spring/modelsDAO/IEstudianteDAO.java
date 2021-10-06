@@ -1,8 +1,8 @@
-package modelsDAO;
+package Backend.Spring.modelsDAO;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import modelEntity.Estudiante;
+import Backend.Spring.modelEntity.Estudiante;
 
 public interface IEstudianteDAO extends JpaRepository<Estudiante, Long> {
 

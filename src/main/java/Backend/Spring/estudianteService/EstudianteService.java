@@ -1,12 +1,14 @@
-package estudianteService;
+package Backend.Spring.estudianteService;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import modelEntity.Estudiante;
-import modelsDAO.IEstudianteDAO;
+import Backend.Spring.modelEntity.Estudiante;
+import Backend.Spring.modelsDAO.IEstudianteDAO;
 
+@Service
 public class EstudianteService implements IEstudianteService {
 	
 	@Autowired

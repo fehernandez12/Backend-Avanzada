@@ -1,4 +1,4 @@
-package controllers;
+package Backend.Spring.controllers;
 
 import java.util.List;
 
@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import estudianteService.IEstudianteService;
-import modelEntity.Estudiante;
+import Backend.Spring.estudianteService.IEstudianteService;
+import Backend.Spring.modelEntity.Estudiante;
+
 
 @RestController
 @RequestMapping("/api")
@@ -29,7 +30,7 @@ public class EstudianteController {
 	};
 	@PostMapping("/estudiantes")
 	@ResponseStatus(HttpStatus.CREATED)
-	public Estudiante save(Estudiante e) {
+	public Estudiante save(@RequestBody Estudiante e) {
 		return estudianteService.save(e);
 	}
 	@DeleteMapping("/estudiantes/{id}")
